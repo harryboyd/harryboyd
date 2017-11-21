@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0px solid red;
+  font-family: arial;
+}
+
+/*type*/
+
+p {
+  font-family: arial;
+  font-size: 12pt;
+  color: #f05050;
+}
+
+.change-text {
+}
+
+a:link, a:visited {
+  color: #f05050;
+}
+
+a:hover, a:active {
+  color: #61185b;
+}
+
+.nav a:link, .nav a:visited {
+  text-decoration: none;
+  color: #61185b;
+}
+
+.nav a:hover, .nav a:active {
+  color: #f05050;
+}
+
+.caption {
+  font-family: arial;
+  font-size: 9pt;
+}
+
+.column {
+  column-count: 2;
+}
+
+.title {
+  font-size: 32pt;
+}
+
+.happy {
+  margin: 0px -4px 0px -3px;
+  font-size: 14pt;
+  position: relative;
+  top: -0.05em
+}
+
+/*shapes*/
+
+.shape-container {
+  width: 100%;
+  height: 1000px;
+  background-color: #aaaaaa;
+}
+
+.purple {
+  background-color: #61185b;
+  position: relative;
+}
+
+.circle {
+  top: -139px;
+  left: 782.2px;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+}
+
+.box {
+  float: right;
+  right: 9px;
+  top: -365px;
+  height: 220px;
+  width: 220px;
+  transform: rotate(5deg);
+}
+
+.bar1 {
+  top: 100px;
+  left: 350px;
+  height: 175px;
+  width: 800px;
+  transform: rotate(-15deg);
+}
+
+.bar2 {
+  top: 215px;
+  left: 1.5px;
+  height: 175px;
+  width: 798px;
+  transform: rotate(23.5deg);
+}
+
+/*div*/
+
+body {
+  backgXround-color: rgb(0,0,0);
+}
+
+.flex-container {
+  display: flex;
+}
+
+.home-head {
+  height: 200px;
+}
+
+.disc-container {
+  padding-bottom: 0px;
+  display: flex;
+  align-items: baseline;
+  height: calc(100% - 200px);
+}
+
+.disc-box {
+  flex: 2;
+  height: 100%;
+}
+
+.flex1 {
+  flex: 1;
+  padding-bottom: 30px;
+}
+
+.flex2 {
+  flex: 2;
+  padding-bottom: 30px;
+}
+
+.flex3 {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.col1 {
+  width: 33%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container {
+  position: flex;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.homestyle {
+  margin: 10px 10px;
+}
+
+.nav-box {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+}
+
+.sector {
+  margin: 0 auto;
+  width: calc(100% - 100px);
+  border: 0.5px solid #000;
+  border-bottom: 0px;
+  padding: 10px 10px 10px 10px;
+}
+
+.home {
+  padding-top: 50px;
+  height: 100vh;
+}
+
+.nav {
+  margin: 0 auto;
+  width: calc(100% - 100px);
+  border: 0.5px solid #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+  background-color: #fff;
+}
+
+.highlight {
+  border: 5px solid red;
+}
+
+.last {
+  border-bottom: 0.5px solid #000;
+}
+
+.disc {
+  padding-right: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.stunt {
+  max-height: 800px;
+}
+
+.change-fill {
+}
