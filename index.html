@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Harry Boyd</title>
+    <link rel='stylesheet' href='stylesheets/styles.css'/>
+
+    <script type="text/javascript" src='scripts/jquery-3.2.1.js'></script>
+    <script>
+    //$(function() {
+    //   var colors = ["#00a06e", "#000000"];
+    //   var rand = Math.floor(Math.random() * colors.length);
+    //   $('.change').css("color", colors[rand]);
+    //});
+    $(function() {
+      var randr = Math.floor(Math.random() * 255);
+      var randg = Math.floor(Math.random() * 255);
+      var randb = Math.floor(Math.random() * 255);
+      var randrr = "rgb(" + randr + "," + randg + "," + randb +")";
+
+      $('.change-text').css("color", randrr);
+      $('.change-fill').css("background-color", randrr);
+    });
+
+    </script>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery.stickem.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('body').stickem();
+    });
+    </script>
+
+  </head>
+  <body>
+
+    <!--HEADER-->
+
+    <div class='nav-box'>
+      <div class='nav text-flip'>
+        <p><a href='#top'>HARRY B<span class='happy10'>☺</span>YD</a></p>
+        <!--<p><a href='#'>About</a></p>-->
+      </div>
+    </div>
+
+    <!--HOME-->
+
+    <div class='sector home'>
+      <div class='flex-box home-head'>
+        <div class='flex1'>
+          <p>
+            Brand and experience design
+          </p>
+        </div>
+        <div class='flex1'>
+          <p>
+            Based in New Zealand
+            <br/>
+            Working at <a class='link' href='http://www.strategycreative.com' target='_blank'>Strategy Creative</a>
+            <br/>
+            <br/>
+            <a class='link' href='mailto:harryboyd1@gmail.com?Subject=Hi%20there' target='_top'>harryboyd1@gmail.com</a>
+            <br/>
+            +64226282975
+          </p>
+        </div>
+        <div class='flex1'>
+          <p>
+            2016
+            <br/>
+            BDes (Hons)
+            <br/>
+            Massey University
+            <br/>
+            <br/>
+            2017
+            <br/>
+            Silver (Slowly Failing)
+            <br/>
+            Best Awards, DINZ
+          </p>
+        </div>
+        <div class='flex2'>
+          <p>
+            Experience
+            <br/>
+            → Strategy Creative
+            <br/>
+            → Toi Aria, Design for Public Good
+            <br/>
+            → Immigration New Zealand
+            <br/>
+            → Museum of New Zealand, Te Papa Tongarewa
+          </p>
+        </div>
+        <div class="disc-box mobile">
+          <div class='disc change-fill'></div>
+        </div>
+      </div>
+      <div class='disc-container desktop'>
+        <div class='flex2'></div>
+        <div class='disc-box'>
+          <div class='disc change-fill'></div>
+        </div>
+      </div>
+    </div>
+
+    <!--CONTENT-->
+
+    <!--Stickem test-->
+
+    <!--
+    <div class='project-container'>
+      <div class='sector-box stickem'>
+        <div class='sector fill'>
+          <div class='head'>
+            <p>SLOWLY FAILING</p>
+            <p>2017</p>
+          </div>
+        </div>
+      </div>
+      <div class='sector' style='height: 500px;'></div>
+    </div>
+    -->
+
+    <!--Slowly Failing-->
+
+    <div class='project-container'>
+      <div class='sector-box stickem'>
+        <div class='sector fill'>
+          <div class='head'>
+            <p>SLOWLY FAILING</p>
+            <p>2017</p>
+          </div>
+        </div>
+      </div>
+      <div class='sector post-head'>
+        <!--<p>
+          Slowly Failing is an exploration, speculation and reaction
+          to the Post-Auto movement, using today’s available technology
+          to communicate tomorrow’s message. The exhibited experiments
+          remove the human element from automated systems, thus removing
+          the practical purpose and generating ‘useless’ output that
+          serves no need. <br/><br/>This is what Slowly Failing explores — the
+          possibilities and outcomes of technology when the user is
+          removed from the process and the technology is left to
+          produce on its own.
+        </p>
+        <p class='detail'>
+          —
+          <br/>
+          Harry Boyd, Isaac Laughton
+          <br/>
+          Awarded Silver at DINZ Best Design Awards
+        </p>-->
+        <img class='imgL' src='images/SF_01.jpg'></img>
+        <img class='img1' src='images/SF_02.jpg'></img>
+        <img class='img2' src='images/SF_03.jpg'></img>
+        <img class='img2' src='images/SF_04.jpg'></img>
+        <img class='img3' src='images/SF_05.jpg'></img>
+        <img class='img4' src='images/SF_06.jpg'></img>
+        <img class='img5' src='images/SF_07.jpg'></img>
+        <img class='img5' src='images/SF_08.jpg'></img>
+        <img class='img5' src='images/SF_09.jpg'></img>
+        <img class='img5' src='images/SF_10.jpg'></img>
+      </div>
+    </div>
+
+    <!--Another one-->
+
+    <!--
+    <div class='project-container'>
+      <div class='sector-box stickem'>
+        <div class='sector fill'>
+          <div class='head'>
+            <p>NAME</p>
+            <p>YEAR</p>
+          </div>
+        </div>
+      </div>
+      <div class='sector post-head'>
+        X
+      </div>
+    </div>
+    -->
+
+    <!--FOOTER-->
+
+    <div class='sector last'>
+      <div class='footer text-flip'>
+        <p><a href='#top'>↑</a></p>
+        <p>Designed and developed by Harry Boyd.</p>
+      </div>
+    </div>
+
+  </body>
+</html>

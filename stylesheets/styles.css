@@ -6,12 +6,18 @@
   font-family: arial;
 }
 
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /*type*/
 
 p {
   font-family: arial;
-  font-size: 12pt;
+  font-size: 10pt;
   color: #f05050;
+  padding-right: 20px;
 }
 
 .change-text {
@@ -25,18 +31,28 @@ a:hover, a:active {
   color: #61185b;
 }
 
-.nav a:link, .nav a:visited {
+.text-flip p, .text-flip a:link,
+.text-flip a:visited {
   text-decoration: none;
   color: #61185b;
 }
 
-.nav a:hover, .nav a:active {
+.text-flip a:hover, .text-flip a:active {
   color: #f05050;
+}
+
+.head p, .nav p, .last p {
+  padding-right: 0px;
 }
 
 .caption {
   font-family: arial;
   font-size: 9pt;
+}
+
+.detail {
+  padding-top: 20px;
+  opacity: 0.5;
 }
 
 .column {
@@ -47,57 +63,18 @@ a:hover, a:active {
   font-size: 32pt;
 }
 
-.happy {
+.happy12 {
   margin: 0px -4px 0px -3px;
   font-size: 14pt;
   position: relative;
   top: -0.05em
 }
 
-/*shapes*/
-
-.shape-container {
-  width: 100%;
-  height: 1000px;
-  background-color: #aaaaaa;
-}
-
-.purple {
-  background-color: #61185b;
+.happy10 {
+  margin: 0px -3px 0px -2.5px;
+  font-size: 11.5pt;
   position: relative;
-}
-
-.circle {
-  top: -139px;
-  left: 782.2px;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-}
-
-.box {
-  float: right;
-  right: 9px;
-  top: -365px;
-  height: 220px;
-  width: 220px;
-  transform: rotate(5deg);
-}
-
-.bar1 {
-  top: 100px;
-  left: 350px;
-  height: 175px;
-  width: 800px;
-  transform: rotate(-15deg);
-}
-
-.bar2 {
-  top: 215px;
-  left: 1.5px;
-  height: 175px;
-  width: 798px;
-  transform: rotate(23.5deg);
+  top: -0.05em
 }
 
 /*div*/
@@ -106,12 +83,31 @@ body {
   backgXround-color: rgb(0,0,0);
 }
 
-.flex-container {
+.mobile {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media screen and (max-width: 520px) {
+  .flex-box {
+    flex-direction: column;
+  }
+  .desktop {
+    visibility: hidden;
+  }
+  .mobile {
+    visibility: visible;
+    position: static;
+  }
+}
+
+.flex-box {
   display: flex;
 }
 
 .home-head {
   height: 200px;
+  padding: 0px 10px 10px 10px;
 }
 
 .disc-container {
@@ -122,8 +118,9 @@ body {
 }
 
 .disc-box {
-  flex: 2;
+  flex: 3;
   height: 100%;
+  z-index: -1000;
 }
 
 .flex1 {
@@ -142,7 +139,55 @@ body {
 }
 
 .col1 {
-  width: 33%;
+  width: 20%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imgL {
+  width: 90%;
+  float: left;
+  height: auto;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.img1 {
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.img2 {
+  float: left;
+  width: 50%;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.img3 {
+  width: 80%;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.img4 {
+  width: 80%;
+  padding-top: 50px;
+  padding-left: 50px;
+  float: right;
+}
+
+.img5 {
+  width: 100%;
+  padding-top: 50px;
 }
 
 .footer {
@@ -163,21 +208,43 @@ body {
 .nav-box {
   margin: 0 auto;
   width: 100%;
+  height: 40px;
   display: flex;
   position: fixed;
-  z-index: 1000;
+  z-index: 2000;
 }
 
 .sector {
   margin: 0 auto;
   width: calc(100% - 100px);
   border: 0.5px solid #000;
-  border-bottom: 0px;
+  border-top: 0px;
   padding: 10px 10px 10px 10px;
 }
 
+.sector-box {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 1000;
+}
+
+.fill {
+  background-color: #fff;
+}
+
+.post-head {
+  padding-top: 40px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
 .home {
-  padding-top: 50px;
+  padding: 50px 0px 0px 0px;
   height: 100vh;
 }
 
@@ -200,15 +267,40 @@ body {
 }
 
 .disc {
-  padding-right: 100%;
   height: 100%;
+  padding-right: 100%;
+  float: right;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #fff;
 }
 
-.stunt {
-  max-height: 800px;
+.disc-test {
+  height: calc(60vw - 100px);
+  max-height: 100%;
+  width: calc(60vw - 100px);
+  padding-right: 100%;
+  float: left;
+  border-radius: 50%;
+  background-color: #f05050;
 }
 
 .change-fill {
+}
+
+/*stickit*/
+
+.project-container {
+  position: relative;
+}
+
+.stuck {
+  margin: 0 auto;
+	position: fixed;
+	top: 40px;
+}
+
+.stuck-end {
+	bottom: 0px;
+	position: absolute;
+	right: 0;
 }
