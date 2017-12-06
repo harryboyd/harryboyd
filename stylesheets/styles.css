@@ -18,6 +18,11 @@ p {
   font-size: 10pt;
   color: #f05050;
   padding-right: 20px;
+  line-height: 130%;
+}
+
+.head p {
+  text-transform: uppercase;
 }
 
 .change-text {
@@ -25,6 +30,7 @@ p {
 
 a:link, a:visited {
   color: #f05050;
+  text-decoration: none;
 }
 
 a:hover, a:active {
@@ -88,7 +94,7 @@ body {
   position: absolute;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 1200px) {
   .flex-box {
     flex-direction: column;
   }
@@ -188,6 +194,20 @@ img {
 .img5 {
   width: 100%;
   padding-top: 50px;
+}
+
+.best-box {
+  width: 25%;
+  padding-top: 25%;
+  padding-left: 50px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.best {
+  width: 500px;
+  padding-top: 50px;
+  padding-left: 50px;
 }
 
 .footer {
